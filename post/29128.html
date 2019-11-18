@@ -19,7 +19,7 @@
 <meta property="og:site_name" content="DoTime">
 <meta property="og:description" content="建站流程记录">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-09-12T09:25:08.372Z">
+<meta property="og:updated_time" content="2019-11-18T09:55:37.425Z">
 <meta name="twitter:card" content="summary">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="//at.alicdn.com/t/font_1387086_xyeyvxu2b2o.css">
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1574069157416">
+  <link rel="stylesheet" href="/css/style.css?v=1574071568447">
 </head>
 
 <body class="mdui-drawer-body-left">
@@ -193,7 +193,7 @@
     </div>
   <div class="nexmoe-post-meta">
     <a><i class="nexmoefont icon-calendar-fill"></i>2019年09月05日</a>
-    <a><i class="nexmoefont icon-areachart"></i>521 字</a>
+    <a><i class="nexmoefont icon-areachart"></i>614 字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
     
       <a class="nexmoefont icon-appstore-fill -link" href="/categories/Blog/">Blog</a>
@@ -222,6 +222,22 @@
 <li><a href="https://sm.ms/" target="_blank" rel="noopener">sm图床</a>: 免费的,nexmoe主题使用的图床,速度很慢.</li>
 <li><a href="https://blog.csdn.net/a201577F0546/article/details/80146350" target="_blank" rel="noopener">腾讯图床</a>: 免费额度限制,需实名认证.</li>
 <li><a href="`https://raw.githubusercontent.com/DoTime/dotime.github.io">自建图床</a>: 使用github资源目录解决图床问题:使用<code>raw域名/用户名/仓库名/分支/文件路径</code>来解决,例如本页面使用<code>https://raw.githubusercontent.com/DoTime/dotime.github.io/master/asset/img/goods/watch1.jpg</code>该资源为题图.</li>
+</ol>
+<h2 id="迁移指南"><a href="#迁移指南" class="headerlink" title="迁移指南"></a>迁移指南</h2><ol>
+<li><p>新建文件夹,初始化hexo, <code>npx hexo init</code></p>
+</li>
+<li><p>clone主题文件</p>
+<ul>
+<li><code>cd themes</code></li>
+<li><code>git clone https://github.com/nexmoe/hexo-theme-nexmoe.git nexmoe</code></li>
+</ul>
+</li>
+<li><p>主题必须安装插件<code>npm i --save hexo-wordcount</code></p>
+</li>
+<li><p>安装git发布插件<code>npm install hexo-deployer-git --save</code></p>
+</li>
+<li><p>博客源码重新关联远程git仓库时候会遇到初始化/分支问题,Google相关问题可以解决.</p>
+</li>
 </ol>
 <h2 id="零散记录"><a href="#零散记录" class="headerlink" title="零散记录"></a>零散记录</h2><ol>
 <li>layout参数标识当前md文件渲染的方式. 在当前nexmoe主题下, py不会显示题图, friend会显示题图,默认为post.</li>
@@ -279,7 +295,7 @@
 <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
-<script src="/js/app.js?v=1574069157428"></script>
+<script src="/js/app.js?v=1574071568454"></script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
 
