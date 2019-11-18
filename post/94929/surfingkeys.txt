@@ -1,0 +1,71 @@
+
+// an example to create a new mapping `ctrl-y`
+mapkey('<Ctrl-y>', 'Show me the money', function() {
+    Front.showPopup('a well-known phrase uttered by characters in Tthe 1996 film Jerry Maguire (Escape to close).');
+});
+
+// an example to replace `u` with `?`, click `Default mappings` to see how `u` works.
+//map('?', 'u');
+
+// an example to remove mapkey `Ctrl-i`??
+unmap('<Ctrl-i>');
+unmap('<Ctrl-j>');
+unmap('<Ctrl-h>');
+unmap('<Alt-s>');
+
+
+// click `Save` button to make above settings to take effect.
+// set theme
+settings.theme = `
+.sk_theme {
+    background: #ffffff;
+    color: #000;
+}
+.sk_theme tbody {
+    color: #000;
+}
+.sk_theme input {
+    color: #000;
+}
+.sk_theme .url {
+    color: #3399ff;
+}
+.sk_theme .annotation {
+    color: #000;
+}
+
+.sk_theme .focused {
+    background: #aaa;
+}`;
+mapkey('oz','打开知乎搜索栏', 'Front.openOmnibar({type: "SearchEngine", extra: "z"})');
+addSearchAliasX('z', '知乎', 'https://www.zhihu.com/search?type=question&q=', 's', 'https://www.zhihu.com/search?type=question&q=',function(response) {
+    var res = eval(response.text);
+    return res[1]
+});
+
+mapkey('op','打开迅雷侠', 'Front.openOmnibar({type: "SearchEngine", extra: "p"})');
+addSearchAliasX('p', '迅雷侠', 'https://www.soxunlei.net/search/', 's', 'https://www.soxunlei.net/search/',function(response) {
+    var res = eval(response.text);
+    return res[1];
+});
+
+mapkey('oy','打开云盘精灵搜索栏', 'Front.openOmnibar({type: "SearchEngine", extra: "y"})');
+addSearchAliasX('y', '云盘精灵', 'https://www.yunpanjingling.com/search/', 's', 'https://www.yunpanjingling.com/search/?',function(response) {
+    var res = eval(response.text);
+    return res[1];
+});
+
+mapkey('od','打开豆瓣搜索栏', 'Front.openOmnibar({type: "SearchEngine", extra: "d"})');
+addSearchAliasX('d', '豆瓣', 'https://www.douban.com/search?q=', 's', 'https://douuban.com/searcg?q=',function(response) {
+    var res = eval(response.text);
+    return res[1];
+})
+
+mapkey('oa','打开阿里云', 'Front.openOmnibar({type: "SearchEngine", extra: "a"})');
+addSearchAliasX('a', 'ali', 'https://www.aliyun.com/ss/?t=h&k=', 's', 'https://www.aliyun.com/ss/?t=h&k=',function(response) {
+    var res = eval(response.text);
+    return res[1];
+})
+
+
+
