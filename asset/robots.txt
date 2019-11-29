@@ -12,5 +12,5 @@ Disallow: /fonts/
 Disallow: /vendor/
 Disallow: /styles/
 
-Sitemap: https://dotime.github.io/sitemap.xml
+Sitemap: https://dotime.github.io/asset/sitemap.xml
 
