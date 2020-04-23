@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dotime.github.io/about.html</loc>
+    
+    <lastmod>2020-04-23T01:23:48.755Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dotime.github.io/post/56208.html</loc>
     
     <lastmod>2020-04-22T02:23:56.573Z</lastmod>
@@ -117,13 +124,6 @@
     <loc>https://dotime.github.io/post/56415.html</loc>
     
     <lastmod>2019-12-17T09:28:31.596Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://dotime.github.io/about.html</loc>
-    
-    <lastmod>2019-12-16T02:11:06.334Z</lastmod>
     
   </url>
   
